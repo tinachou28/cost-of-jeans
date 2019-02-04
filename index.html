@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<title>The Cost of Your Jeans</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/homepage.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.myIcon {
+  height: 100px
+}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">THE COST OF YOUR JEANS</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#statistics" class="w3-bar-item w3-button">STATISTICS</a>
+      <a href="#takeaction" class="w3-bar-item w3-button">TAKE ACTION</a>
+      <a href="#gallery" class="w3-bar-item w3-button">GALLERY</a>
+      <a href="#survey" class="w3-bar-item w3-button">SURVEY</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#statistics" onclick="w3_close()" class="w3-bar-item w3-button">STATISTICS</a>
+  <a href="#takeaction" onclick="w3_close()" class="w3-bar-item w3-button">TAKE ACTION</a>
+  <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button">GALLERY</a>
+  <a href="#survey" onclick="w3_close()" class="w3-bar-item w3-button">SURVEY</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Do you know the cost of your jeans?</span><br>
+    <span class="w3-large">The denim industry is one of the largest in the world, yet also one of the most polluting.</span>
+  </div> 
+</header>
+
+<!-- Information section-->
+<div class="w3-container w3-row w3-center w3-light-grey w3-padding-64" style="padding:30px 16px">
+<h4>In factories, jeans are washed to make the cloth look old. In China, the waste water mainly goes untreated into a river. This water is contaminated with heavy metals, bleach, and strong alkalis, causing rivers to turn a sickly blue and making it inhabitable for organisms. During some times of the year, the rivers are so polluted that it is even possible to set them on fire.</h4><br>
+<iframe width="640px" height="320px" src="https://www.youtube.com/embed/747kbvLHM0Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<p>RiverBlue is a documentary that illustrates the damage the fashion industry does to the environment. For more details, visit <a href="http://riverbluethemovie.eco/" target="blank">RiverBlue's official website.</a></p>
+</div>
+
+<!-- Statistics Section -->
+<div class="w3-container" style="padding:56px 16px" id="statistics">
+  <h3 class="w3-center">STATISTICS</h3>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <img class="myIcon" src="images/bathtub.png">
+      <p class="w3-large">7,000 Liters</p>
+      <p>The amount of water needed to create one pair of jeans. This is equivalent to about 45 bathtubs of water. As a result, 2.5 billion gallons of wastewater are produced annually in Asia, contaminating 70% of Asia's rivers.</p>
+    </div>
+    <div class="w3-quarter">
+      <img class="myIcon" src="images/co2.png">
+      <p class="w3-large">6 Million Metric Tons</p>
+      <p>The amount of carbon dioxide resulting from the production of jeans in the China annually. The production of one pair of jeans produces 20kg of carbon dioxide, and about 300 million jeans are sold in China each year.</p>
+    </div>
+    <div class="w3-quarter">
+      <img height=85px src="images/disease.png">
+      <p class="w3-large">Toxins</p>
+      <p>The denim industry pollutes rivers with heavy metals such as mercury and lead, as well as carcinogens. People who spend time near these rivers suffer from a high incidence of cancers, gastric, skin and related issues. In once case, cadmium levels in soils near polluted rivers was reported to be 128 times China's national limit. The pH of these polluted waters can reach up to 11.95.</p>
+    </div>
+    <div class="w3-quarter">
+      <img class="myIcon" src="images/90%.png">
+      <p class="w3-large">Deception</p>
+      <p>Popular denim brands are hiding as much as 90% of the pollution they generate by outsourcing production to contractors in developing countries.</p>
+    </div>
+  </div>
+<br>
+<p class="w3-large" style="padding:0px 15px">Often, the toxins are discharged untreated in rivers near drinking water sources. This has caused a spike in incidence rates of cancer and other diseases and poisonings. As a result, many people are unwilling to work at or live near denim factories. Denim factories often do not supply insurance for employees for the first three months they are employed as they realise how dangerous the working environments are.</p>
+</div>
+
+
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">1.8 million</span>
+    <br>Deaths worldwide caused by water pollution.
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">56.4%</span>
+    <br>of freshwater is unusable in Shanghai.
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">4.9%</span>
+    <br>of freshwater is drinkable in Tianjin.
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">3.78 trillion</span>
+    <br>The amount of untreated wastewater discharged across China in 2015.
+  </div>
+</div>
+
+
+<!-- takeaction Section -->
+<div class="w3-container w3-light-grey" style="padding:56px 16px" id="takeaction">
+  <h3 class="w3-center">TAKE ACTION</h3>
+  <p align="center">Now we know the ramifications of this industry. But unless we are the heads of a large denim company, it feels like there is not much we can do. However, every little change makes a difference. Here are some ideas:</p>
+  <ul>
+    <li>Buy from eco-friendly denim brands:
+      <ul>
+        <li><a href="https://www.onedenim.com" target="blank">One Denim</a></li>
+        <li><a href="https://www.livefashionable.com/collections/denim?sscid=21k3_2mre4" target="blank">ABLE</a></li>
+        <li><a href="https://www.thereformation.com/categories/jeans?utm_source=QFGLnEolOWg&utm_medium=15&utm_campaign=LinkShare&sid=LS298X102&ranMID=40090&ranEAID=2575853&ranSiteID=QFGLnEolOWg-p4kLRsW8Rl1M5_i0xXa4FA" target="blank">Reformation</a></li>
+        <li><a href="https://www.dl1961.com/?cjevent=fbd559c4281f11e980d103780a180514" target="blank">DL1961</a></li>
+        <li><a href="https://kuyichi.com/" target="blank">Kuyichi</a></li></ul>
+    <li>Buy less jeans</li>
+    <li>Increase awareness of this issue (share this website?)</li>
+</div>
+
+
+<!-- Gallery -->
+<div class="w3-container" style="padding:30px 16px" id="gallery">
+  <h3 class="w3-center">GALLERY</h3>
+  <p align="center">Click on the images to enlarge.</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="galleryimages/pollution1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A river contaminated by waste from the denim industry.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="galleryimages/foamdischarge.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Foamy discharge from a denim factory.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="galleryimages/boat.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A boat in polluted waters.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="galleryimages/more pollution.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="More pollution.">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="galleryimages/fish.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Dead fish in a polluted river.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="galleryimages/map.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="In this satellite image, the polluted river (dark blue) flows into the Dong River, which eventually leads to the Pearl River Delta.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="galleryimages/worker.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A worker at a denim factory. The air is so toxic that he has to wear a mask.">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="galleryimages/ew.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Untreated wastewater.">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Survey -->
+<div id="survey">
+<h3 class="w3-center">SURVEY</h3>
+<p class="w3-center">This survey will help the developers assess the quality of this site. Please take a few seconds to complete it! Thanks.</p>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBYtohcfkNf71p_cU3tA32oEu5C6jYmBsheLfS9ygvcGIk8w/viewform?embedded=true" width="1280" height="640" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-black w3-padding-64" style="padding:0px 30px">
+  <h3>Bibliography</h3>
+  <p>“10 Fair Trade & Eco-Friendly Denim Brands You Should Know Exist.” <strong>The Good Trade</strong>, 2016, www.thegoodtrade.com/lists/ethical-denim.</p>
+  <p>Guang, Li. “The Denim Capital of the World: so Polluted You Can't Give the Houses Away.” 中外对话 China Dialogue, 13 Aug. 2013, <a href="https://www.chinadialogue.net/article/show/single/en/6283-The-denim-capital-of-the-world-so-polluted-you-can-t-give-the-houses-away" target="blank">www.chinadialogue.net/article/show/single/en/6283-The-denim-capital-of-the-world-so-polluted-you-can-t-give-the-houses-away</a>.</p>
+  <p>Karabell, Shellie. “Amsterdam Denim Days: Cleaning Up A Dirty Business.” Forbes Magazine, 18 Apr. 2016, <a href="https://www.forbes.com/sites/shelliekarabell/2016/04/17/amsterdam-denim-days-cleaning-up-a-dirty-business/#63507e386dcc." target="blank">www.forbes.com/sites/shelliekarabell/2016/04/17/amsterdam-denim-days-cleaning-up-a-dirty-business/#63507e386dcc.</a></p>
+  <p>Paglia, Todd. “7 Dirty Denim Brands Destroying the Environment: Exporting Their Pollution Kills Thousands.” Alternet, Alternet.org, 13 Aug. 2017, <a href="http://www.alternet.org/2017/08/7-dirty-denim-brands-destroying-environment-and-exporting-their-pollution-vulnerable/" rel="noopener noreferrer" target="blank">www.alternet.org/2017/08/7-dirty-denim-brands-destroying-environment-and-exporting-their-pollution-vulnerable/</a>.</p>
+  <p><strong>RiverBlue</strong>, riverbluethemovie.eco/the-film/.</p>
+  <p>“The Dirty Secret behind Jeans and Bras.” Greenpeace International, 1 Dec. 2010, <a href="https://www.greenpeace.org/eastasia/news/stories/toxics/2010/textile-pollution-xintang-gurao/" target="blank">www.greenpeace.org/eastasia/news/stories/toxics/2010/textile-pollution-xintang-gurao/</a>.</p>
+  <p>Webber, Kathleen. “The Environmental and Human Cost of Making a Pair of Jeans.” EcoWatch, 13 Mar. 2018, <a href="https://www.ecowatch.com/environmental-cost-jeans-2544519658.html" target="blank">www.ecowatch.com/environmental-cost-jeans-2544519658.html</a>.</p>
+  <p>Yan, Alice. “Pollution Kills 1.8 Million Chinese, Study Says.” South China Morning Post, South China Morning Post, 20 Oct. 2017, <a href="https://www.scmp.com/news/china/society/article/2116342/pollution-claims-18-million-lives-china-latest-research-says" target="blank">www.scmp.com/news/china/society/article/2116342/pollution-claims-18-million-lives-china-latest-research-says</a>.</p>
+<a href='https://free-hit-counters.net/'>free-hit-counters.net</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=cc2f37cdcffad969925fee591d47085c97a050b0'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/483320/t/0"></script>  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
