@@ -15,6 +15,26 @@ body, html {
   height: 100%;
   line-height: 1.8;
 }
+  
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+ .iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+
+/* 4x3 Aspect Ratio */
+.iframe-container-4x3 {
+  padding-top: 75%;
+}
 
 /* Full height image header */
 .bgimg-1 {
@@ -198,7 +218,8 @@ body, html {
 <p class="w3-center">This survey will help the developers assess the quality of this site. Please take a few seconds to complete it! Thanks.
   <br>
   If you are using a phone and cannot see the full survey, just scroll. There are two questions.</p>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBYtohcfkNf71p_cU3tA32oEu5C6jYmBsheLfS9ygvcGIk8w/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%">Loading...</iframe>
+<div class="iframe-container"><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBYtohcfkNf71p_cU3tA32oEu5C6jYmBsheLfS9ygvcGIk8w/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" width="100%" height="100%">Loading...</iframe>
+  </div>
   </div>
 
 
